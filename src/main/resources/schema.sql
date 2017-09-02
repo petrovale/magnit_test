@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS test;
+DROP SEQUENCE IF EXISTS test_seq;
+
+CREATE SEQUENCE test_seq START 1;
+
+CREATE TABLE test (
+  id    INTEGER PRIMARY KEY DEFAULT nextval('test_seq'),
+  field INT NOT NULL);
