@@ -7,7 +7,7 @@ import java.io.*;
 
 import static com.company.Main.firstDestinationFilename;
 
-public class TestExport2xml {
+public class SecondXmlWriter {
     private static final String nameXslFile = "2.xsl";
 
     private String configFile;

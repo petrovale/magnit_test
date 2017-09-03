@@ -3,7 +3,7 @@ package com.company;
 import com.company.config.AppConfig;
 import com.company.dao.TestDao;
 import com.company.export.TestExport;
-import com.company.export.TestExport2xml;
+import com.company.export.SecondXmlWriter;
 import com.company.export.FirstXmlWriter;
 import com.company.util.Parsing2xml;
 import lombok.extern.slf4j.Slf4j;
@@ -42,7 +42,7 @@ public class Main {
         noNSWriter.writeToXml(Paths.get(firstDestinationFilename), testDao.getAll());
 
         // save 2.xml
-        TestExport2xml export2xml = new TestExport2xml();
+        SecondXmlWriter export2xml = new SecondXmlWriter();
         export2xml.setFile(secondDestinationFilename);
         export2xml.save();
 
