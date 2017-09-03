@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.config.AppConfig;
 import com.company.dao.TestDao;
-import com.company.export.TestExport;
+import com.company.export.TestImporterToDB;
 import com.company.export.SecondXmlWriter;
 import com.company.export.FirstXmlWriter;
 import com.company.util.Parsing2xml;
@@ -31,20 +31,18 @@ public class Main {
                 AppConfig.INSTANCE.getPassword());
 
         // save DB test
-        TestExport testExport = new TestExport();
-
-        testExport.process(AppConfig.INSTANCE.getCountField(), 1000);
+        TestImporterToDB tid = new TestImporterToDB();
+        tid.process(AppConfig.INSTANCE.getCountField(), 1000);
 
         // save 1.xml
-        FirstXmlWriter noNSWriter = new FirstXmlWriter();
+        FirstXmlWriter firstXmlWriter = new FirstXmlWriter();
 
         TestDao testDao = DBIProvider.getDao(TestDao.class);
-        noNSWriter.writeToXml(Paths.get(firstDestinationFilename), testDao.getAll());
+        firstXmlWriter.writeToXml(Paths.get(firstDestinationFilename), testDao.getAll());
 
         // save 2.xml
-        SecondXmlWriter export2xml = new SecondXmlWriter();
-        export2xml.setFile(secondDestinationFilename);
-        export2xml.save();
+        SecondXmlWriter secondXmlWriter = new SecondXmlWriter();
+        secondXmlWriter.writeToXml(secondDestinationFilename);
 
         // parsing 2.xml and output arithmetic sum of the values ​​of all attributes
         System.out.println("арифметическая сумму = " + Parsing2xml.getArithmeticSumOfValues());
