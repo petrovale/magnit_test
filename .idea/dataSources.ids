@@ -28,8 +28,8 @@
       <schema id="7" parent="1" name="public">
         <object-id>2200</object-id>
         <visible>1</visible>
-        <introspection-state-number>1524572</introspection-state-number>
-        <introspection-timestamp>2017-08-27.18:31:47.898</introspection-timestamp>
+        <introspection-state-number>1556762</introspection-state-number>
+        <introspection-timestamp>2017-09-03.22:21:57.387</introspection-timestamp>
       </schema>
       <schema id="8" parent="1" name="pg_catalog">
         <object-id>11</object-id>
@@ -47,32 +47,32 @@
         <object-id>12081</object-id>
       </schema>
       <sequence id="13" parent="7" name="test_seq">
-        <object-id>210471</object-id>
-        <state-number>1524571</state-number>
+        <object-id>210539</object-id>
+        <state-number>1556761</state-number>
       </sequence>
       <table id="14" parent="7" name="test">
-        <object-id>210473</object-id>
-        <state-number>1524572</state-number>
+        <object-id>210541</object-id>
+        <state-number>1556762</state-number>
       </table>
       <column id="15" parent="14" name="id">
-        <state-number>1524572</state-number>
+        <state-number>1556762</state-number>
         <mandatory>1</mandatory>
         <data-type>integer|0</data-type>
         <default-expression>nextval(&apos;test_seq&apos;::regclass)</default-expression>
       </column>
       <column id="16" parent="14" name="field">
-        <state-number>1524572</state-number>
+        <state-number>1556762</state-number>
         <mandatory>1</mandatory>
         <data-type>integer|0</data-type>
       </column>
       <index id="17" parent="14" name="test_pkey">
-        <object-id>210477</object-id>
+        <object-id>210545</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
       <key id="18" parent="14" name="test_pkey">
-        <object-id>210478</object-id>
+        <object-id>210546</object-id>
         <columns>id</columns>
         <underlying-index>test_pkey</underlying-index>
         <primary>1</primary>

@@ -4,10 +4,11 @@ import com.company.config.AppConfig;
 import com.company.dao.TestDao;
 import com.company.export.TestExport;
 import com.company.export.TestExport2xml;
+import com.company.export.FirstXmlWriter;
 import com.company.util.Parsing2xml;
-import com.company.export.TestExport1xml;
 import lombok.extern.slf4j.Slf4j;
 
+import java.nio.file.Paths;
 import java.sql.DriverManager;
 
 @Slf4j
@@ -35,11 +36,10 @@ public class Main {
         testExport.process(AppConfig.INSTANCE.getCountField(), 1000);
 
         // save 1.xml
-        TestExport1xml export1xml= new TestExport1xml();
-        export1xml.setFile(firstDestinationFilename);
+        FirstXmlWriter noNSWriter = new FirstXmlWriter();
 
         TestDao testDao = DBIProvider.getDao(TestDao.class);
-        export1xml.saveConfig(testDao.getAll());
+        noNSWriter.writeToXml(Paths.get(firstDestinationFilename), testDao.getAll());
 
         // save 2.xml
         TestExport2xml export2xml = new TestExport2xml();

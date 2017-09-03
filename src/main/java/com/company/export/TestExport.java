@@ -4,6 +4,7 @@ import com.company.DBIProvider;
 import com.company.dao.TestDao;
 import com.company.model.Test;
 
+import javax.xml.stream.XMLStreamException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -19,12 +20,12 @@ public class TestExport {
 
     private static final String successfully = "successfully";
 
-    public String process(int countField, int chunkSize) throws Exception {
+    public String process(int countField, int chunkSize) throws XMLStreamException {
         testDao.clean();
 
         return new Callable<String>() {
             @Override
-            public String call() throws Exception {
+            public String call() throws XMLStreamException {
                 List<Future<int[]>> futures = new ArrayList<>();
 
                 int id = testDao.getSeqAndSkip(chunkSize);

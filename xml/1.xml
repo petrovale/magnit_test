@@ -1,303 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--Describes list of tests-->
 <entries>
-	<entry>
-		<field>значение поля 1</field>
-	</entry>
-	<entry>
-		<field>значение поля 2</field>
-	</entry>
-	<entry>
-		<field>значение поля 3</field>
-	</entry>
-	<entry>
-		<field>значение поля 4</field>
-	</entry>
-	<entry>
-		<field>значение поля 5</field>
-	</entry>
-	<entry>
-		<field>значение поля 6</field>
-	</entry>
-	<entry>
-		<field>значение поля 7</field>
-	</entry>
-	<entry>
-		<field>значение поля 8</field>
-	</entry>
-	<entry>
-		<field>значение поля 9</field>
-	</entry>
-	<entry>
-		<field>значение поля 10</field>
-	</entry>
-	<entry>
-		<field>значение поля 11</field>
-	</entry>
-	<entry>
-		<field>значение поля 12</field>
-	</entry>
-	<entry>
-		<field>значение поля 13</field>
-	</entry>
-	<entry>
-		<field>значение поля 14</field>
-	</entry>
-	<entry>
-		<field>значение поля 15</field>
-	</entry>
-	<entry>
-		<field>значение поля 16</field>
-	</entry>
-	<entry>
-		<field>значение поля 17</field>
-	</entry>
-	<entry>
-		<field>значение поля 18</field>
-	</entry>
-	<entry>
-		<field>значение поля 19</field>
-	</entry>
-	<entry>
-		<field>значение поля 20</field>
-	</entry>
-	<entry>
-		<field>значение поля 21</field>
-	</entry>
-	<entry>
-		<field>значение поля 22</field>
-	</entry>
-	<entry>
-		<field>значение поля 23</field>
-	</entry>
-	<entry>
-		<field>значение поля 24</field>
-	</entry>
-	<entry>
-		<field>значение поля 25</field>
-	</entry>
-	<entry>
-		<field>значение поля 26</field>
-	</entry>
-	<entry>
-		<field>значение поля 27</field>
-	</entry>
-	<entry>
-		<field>значение поля 28</field>
-	</entry>
-	<entry>
-		<field>значение поля 29</field>
-	</entry>
-	<entry>
-		<field>значение поля 30</field>
-	</entry>
-	<entry>
-		<field>значение поля 31</field>
-	</entry>
-	<entry>
-		<field>значение поля 32</field>
-	</entry>
-	<entry>
-		<field>значение поля 33</field>
-	</entry>
-	<entry>
-		<field>значение поля 34</field>
-	</entry>
-	<entry>
-		<field>значение поля 35</field>
-	</entry>
-	<entry>
-		<field>значение поля 36</field>
-	</entry>
-	<entry>
-		<field>значение поля 37</field>
-	</entry>
-	<entry>
-		<field>значение поля 38</field>
-	</entry>
-	<entry>
-		<field>значение поля 39</field>
-	</entry>
-	<entry>
-		<field>значение поля 40</field>
-	</entry>
-	<entry>
-		<field>значение поля 41</field>
-	</entry>
-	<entry>
-		<field>значение поля 42</field>
-	</entry>
-	<entry>
-		<field>значение поля 43</field>
-	</entry>
-	<entry>
-		<field>значение поля 44</field>
-	</entry>
-	<entry>
-		<field>значение поля 45</field>
-	</entry>
-	<entry>
-		<field>значение поля 46</field>
-	</entry>
-	<entry>
-		<field>значение поля 47</field>
-	</entry>
-	<entry>
-		<field>значение поля 48</field>
-	</entry>
-	<entry>
-		<field>значение поля 49</field>
-	</entry>
-	<entry>
-		<field>значение поля 50</field>
-	</entry>
-	<entry>
-		<field>значение поля 51</field>
-	</entry>
-	<entry>
-		<field>значение поля 52</field>
-	</entry>
-	<entry>
-		<field>значение поля 53</field>
-	</entry>
-	<entry>
-		<field>значение поля 54</field>
-	</entry>
-	<entry>
-		<field>значение поля 55</field>
-	</entry>
-	<entry>
-		<field>значение поля 56</field>
-	</entry>
-	<entry>
-		<field>значение поля 57</field>
-	</entry>
-	<entry>
-		<field>значение поля 58</field>
-	</entry>
-	<entry>
-		<field>значение поля 59</field>
-	</entry>
-	<entry>
-		<field>значение поля 60</field>
-	</entry>
-	<entry>
-		<field>значение поля 61</field>
-	</entry>
-	<entry>
-		<field>значение поля 62</field>
-	</entry>
-	<entry>
-		<field>значение поля 63</field>
-	</entry>
-	<entry>
-		<field>значение поля 64</field>
-	</entry>
-	<entry>
-		<field>значение поля 65</field>
-	</entry>
-	<entry>
-		<field>значение поля 66</field>
-	</entry>
-	<entry>
-		<field>значение поля 67</field>
-	</entry>
-	<entry>
-		<field>значение поля 68</field>
-	</entry>
-	<entry>
-		<field>значение поля 69</field>
-	</entry>
-	<entry>
-		<field>значение поля 70</field>
-	</entry>
-	<entry>
-		<field>значение поля 71</field>
-	</entry>
-	<entry>
-		<field>значение поля 72</field>
-	</entry>
-	<entry>
-		<field>значение поля 73</field>
-	</entry>
-	<entry>
-		<field>значение поля 74</field>
-	</entry>
-	<entry>
-		<field>значение поля 75</field>
-	</entry>
-	<entry>
-		<field>значение поля 76</field>
-	</entry>
-	<entry>
-		<field>значение поля 77</field>
-	</entry>
-	<entry>
-		<field>значение поля 78</field>
-	</entry>
-	<entry>
-		<field>значение поля 79</field>
-	</entry>
-	<entry>
-		<field>значение поля 80</field>
-	</entry>
-	<entry>
-		<field>значение поля 81</field>
-	</entry>
-	<entry>
-		<field>значение поля 82</field>
-	</entry>
-	<entry>
-		<field>значение поля 83</field>
-	</entry>
-	<entry>
-		<field>значение поля 84</field>
-	</entry>
-	<entry>
-		<field>значение поля 85</field>
-	</entry>
-	<entry>
-		<field>значение поля 86</field>
-	</entry>
-	<entry>
-		<field>значение поля 87</field>
-	</entry>
-	<entry>
-		<field>значение поля 88</field>
-	</entry>
-	<entry>
-		<field>значение поля 89</field>
-	</entry>
-	<entry>
-		<field>значение поля 90</field>
-	</entry>
-	<entry>
-		<field>значение поля 91</field>
-	</entry>
-	<entry>
-		<field>значение поля 92</field>
-	</entry>
-	<entry>
-		<field>значение поля 93</field>
-	</entry>
-	<entry>
-		<field>значение поля 94</field>
-	</entry>
-	<entry>
-		<field>значение поля 95</field>
-	</entry>
-	<entry>
-		<field>значение поля 96</field>
-	</entry>
-	<entry>
-		<field>значение поля 97</field>
-	</entry>
-	<entry>
-		<field>значение поля 98</field>
-	</entry>
-	<entry>
-		<field>значение поля 99</field>
-	</entry>
-	<entry>
-		<field>значение поля 100</field>
-	</entry>
+<entry>
+<field>значение поля 1</field>
+</entry>
+<entry>
+<field>значение поля 2</field>
+</entry>
+<entry>
+<field>значение поля 3</field>
+</entry>
+<entry>
+<field>значение поля 4</field>
+</entry>
+<entry>
+<field>значение поля 5</field>
+</entry>
+<entry>
+<field>значение поля 6</field>
+</entry>
+<entry>
+<field>значение поля 7</field>
+</entry>
+<entry>
+<field>значение поля 8</field>
+</entry>
+<entry>
+<field>значение поля 9</field>
+</entry>
+<entry>
+<field>значение поля 10</field>
+</entry>
+<entry>
+<field>значение поля 11</field>
+</entry>
+<entry>
+<field>значение поля 12</field>
+</entry>
+<entry>
+<field>значение поля 13</field>
+</entry>
+<entry>
+<field>значение поля 14</field>
+</entry>
+<entry>
+<field>значение поля 15</field>
+</entry>
+<entry>
+<field>значение поля 16</field>
+</entry>
+<entry>
+<field>значение поля 17</field>
+</entry>
+<entry>
+<field>значение поля 18</field>
+</entry>
+<entry>
+<field>значение поля 19</field>
+</entry>
+<entry>
+<field>значение поля 20</field>
+</entry>
+<entry>
+<field>значение поля 21</field>
+</entry>
+<entry>
+<field>значение поля 22</field>
+</entry>
+<entry>
+<field>значение поля 23</field>
+</entry>
+<entry>
+<field>значение поля 24</field>
+</entry>
+<entry>
+<field>значение поля 25</field>
+</entry>
+<entry>
+<field>значение поля 26</field>
+</entry>
+<entry>
+<field>значение поля 27</field>
+</entry>
+<entry>
+<field>значение поля 28</field>
+</entry>
+<entry>
+<field>значение поля 29</field>
+</entry>
+<entry>
+<field>значение поля 30</field>
+</entry>
+<entry>
+<field>значение поля 31</field>
+</entry>
+<entry>
+<field>значение поля 32</field>
+</entry>
+<entry>
+<field>значение поля 33</field>
+</entry>
+<entry>
+<field>значение поля 34</field>
+</entry>
+<entry>
+<field>значение поля 35</field>
+</entry>
+<entry>
+<field>значение поля 36</field>
+</entry>
+<entry>
+<field>значение поля 37</field>
+</entry>
+<entry>
+<field>значение поля 38</field>
+</entry>
+<entry>
+<field>значение поля 39</field>
+</entry>
+<entry>
+<field>значение поля 40</field>
+</entry>
+<entry>
+<field>значение поля 41</field>
+</entry>
+<entry>
+<field>значение поля 42</field>
+</entry>
+<entry>
+<field>значение поля 43</field>
+</entry>
+<entry>
+<field>значение поля 44</field>
+</entry>
+<entry>
+<field>значение поля 45</field>
+</entry>
+<entry>
+<field>значение поля 46</field>
+</entry>
+<entry>
+<field>значение поля 47</field>
+</entry>
+<entry>
+<field>значение поля 48</field>
+</entry>
+<entry>
+<field>значение поля 49</field>
+</entry>
 </entries>

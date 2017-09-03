@@ -6,8 +6,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-import static com.company.export.TestExport1xml.entry;
-import static com.company.export.TestExport1xml.field;
+import static com.company.export.FirstXmlWriter.entry;
+import static com.company.export.FirstXmlWriter.field;
+
 
 public class Parsing2xml {
     private static final String pathToDestinationFile = "xml\\2.xml";
@@ -24,7 +25,7 @@ public class Parsing2xml {
 
             while (processor.doUntil(XMLEvent.START_ELEMENT, entry)) {
                 final String fieldValue = processor.getAttribute(field);
-                sum+= Integer.parseInt(field.substring(fieldValue.lastIndexOf(" ") + 1));
+                sum+= Integer.parseInt(fieldValue.substring(fieldValue.lastIndexOf(" ") + 1));
             }
         }
 
