@@ -17,6 +17,8 @@ public class TestExport {
     private static final int NUMBER_THREADS = 4;
     private ExecutorService executorService = Executors.newFixedThreadPool(NUMBER_THREADS);
 
+    private static final String successfully = "successfully";
+
     public String process(int countField, int chunkSize) throws Exception {
         testDao.clean();
 
@@ -52,7 +54,7 @@ public class TestExport {
                 System.out.println();
                 executorService.shutdown();
 
-                return "successfully";
+                return successfully;
             }
 
             private Future<int[]> submit(List<Test> chunk) {

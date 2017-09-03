@@ -12,6 +12,8 @@ import java.sql.DriverManager;
 
 @Slf4j
 public class Main {
+    public static final String firstDestinationFilename = "xml\\1.xml";
+    public static final String secondDestinationFilename = "xml\\2.xml";
 
     public static void main(String[] args) throws Exception {
         if (args.length == 5) {
@@ -34,14 +36,14 @@ public class Main {
 
         // save 1.xml
         TestExport1xml export1xml= new TestExport1xml();
-        export1xml.setFile("xml\\1.xml");
+        export1xml.setFile(firstDestinationFilename);
 
         TestDao testDao = DBIProvider.getDao(TestDao.class);
         export1xml.saveConfig(testDao.getAll());
 
         // save 2.xml
         TestExport2xml export2xml = new TestExport2xml();
-        export2xml.setFile("xml\\2.xml");
+        export2xml.setFile(secondDestinationFilename);
         export2xml.save();
 
         // parsing 2.xml and output arithmetic sum of the values ​​of all attributes

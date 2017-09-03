@@ -6,7 +6,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
+import static com.company.export.TestExport1xml.entry;
+import static com.company.export.TestExport1xml.field;
+
 public class Parsing2xml {
+    private static final String pathToDestinationFile = "xml\\2.xml";
 
     private Parsing2xml() {
     }
@@ -16,11 +20,11 @@ public class Parsing2xml {
         long sum = 0;
 
         try (StaxStreamProcessor processor =
-                     new StaxStreamProcessor(new FileInputStream(new File("xml\\2.xml")))) {
+                     new StaxStreamProcessor(new FileInputStream(new File(pathToDestinationFile)))) {
 
-            while (processor.doUntil(XMLEvent.START_ELEMENT, "entry")) {
-                final String field = processor.getAttribute("field");
-                sum+= Integer.parseInt(field.substring(field.lastIndexOf(" ") + 1));
+            while (processor.doUntil(XMLEvent.START_ELEMENT, entry)) {
+                final String fieldValue = processor.getAttribute(field);
+                sum+= Integer.parseInt(field.substring(fieldValue.lastIndexOf(" ") + 1));
             }
         }
 

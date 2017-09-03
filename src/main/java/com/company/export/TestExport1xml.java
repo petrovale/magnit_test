@@ -12,6 +12,11 @@ import java.io.FileOutputStream;
 import java.util.List;
 
 public class TestExport1xml {
+    public static final String entries = "entries";
+    public static final String entry = "entry";
+    public static final String field = "field";
+    public static final String fieldValue = "значение поля ";
+
     private String configFile;
 
     public void setFile(String configFile) {
@@ -35,26 +40,26 @@ public class TestExport1xml {
 
         // create config open tag
         StartElement configStartElement = eventFactory.createStartElement("",
-                "", "entries");
+                "", entries);
         eventWriter.add(configStartElement);
         eventWriter.add(end);
 
         StartElement configStartEntry = eventFactory.createStartElement("",
-                "", "entry");
+                "", entry);
 
         for (Test test : tests) {
             eventWriter.add(tab);
             eventWriter.add(configStartEntry);
             eventWriter.add(end);
             // Write the different nodes
-            createNode(eventWriter, "field", String.valueOf("значение поля " + test.getField()));
+            createNode(eventWriter, field, String.valueOf(fieldValue + test.getField()));
 
             eventWriter.add(tab);
-            eventWriter.add(eventFactory.createEndElement("", "", "entry"));
+            eventWriter.add(eventFactory.createEndElement("", "", entry));
             eventWriter.add(end);
         }
 
-        eventWriter.add(eventFactory.createEndElement("", "", "entries"));
+        eventWriter.add(eventFactory.createEndElement("", "", entries));
         eventWriter.add(end);
         eventWriter.add(eventFactory.createEndDocument());
 

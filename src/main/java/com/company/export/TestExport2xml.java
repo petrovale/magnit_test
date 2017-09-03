@@ -5,7 +5,10 @@ import com.company.util.XsltProcessor;
 import javax.xml.transform.stream.StreamResult;
 import java.io.*;
 
+import static com.company.Main.firstDestinationFilename;
+
 public class TestExport2xml {
+    private static final String nameXslFile = "2.xsl";
 
     private String configFile;
 
@@ -15,8 +18,8 @@ public class TestExport2xml {
 
     public void save() throws Exception {
         ClassLoader classLoader = getClass().getClassLoader();
-        try (InputStream xslInputStream = classLoader.getResource("2.xsl").openStream();
-             InputStream xmlInputStream = new File("xml\\1.xml").toURI().toURL().openStream()) {
+        try (InputStream xslInputStream = classLoader.getResource(nameXslFile).openStream();
+             InputStream xmlInputStream = new File(firstDestinationFilename).toURI().toURL().openStream()) {
 
             XsltProcessor processor = new XsltProcessor(xslInputStream);
 
