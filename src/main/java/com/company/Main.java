@@ -1,7 +1,6 @@
 package com.company;
 
 import com.company.config.AppConfig;
-import com.company.dao.TestDao;
 import com.company.export.TestImporterToDB;
 import com.company.export.SecondXmlWriter;
 import com.company.export.FirstXmlWriter;
@@ -15,6 +14,7 @@ import java.sql.DriverManager;
 public class Main {
     public static final String firstDestinationFilename = "xml\\1.xml";
     public static final String secondDestinationFilename = "xml\\2.xml";
+    private static final int CHUNK_SIZE = 1000;
 
     public static void main(String[] args) throws Exception {
         if (args.length == 5) {
@@ -32,20 +32,18 @@ public class Main {
 
         // save DB test
         TestImporterToDB tid = new TestImporterToDB();
-        tid.process(AppConfig.INSTANCE.getCountField(), 1000);
+        tid.process(AppConfig.INSTANCE.getCountField(), CHUNK_SIZE);
 
         // save 1.xml
         FirstXmlWriter firstXmlWriter = new FirstXmlWriter();
-
-        TestDao testDao = DBIProvider.getDao(TestDao.class);
-        firstXmlWriter.writeToXml(Paths.get(firstDestinationFilename), testDao.getAll());
+        firstXmlWriter.writeToXml(Paths.get(firstDestinationFilename), AppConfig.INSTANCE.getCountField(), CHUNK_SIZE);
 
         // save 2.xml
         SecondXmlWriter secondXmlWriter = new SecondXmlWriter();
         secondXmlWriter.writeToXml(secondDestinationFilename);
 
         // parsing 2.xml and output arithmetic sum of the values ​​of all attributes
-        System.out.println("арифметическая сумму = " + Parsing2xml.getArithmeticSumOfValues());
+        System.out.println("арифметическая сумма = " + Parsing2xml.getArithmeticSumOfValues());
     }
 
     public static void initDBI(String dbDriver, String dbUrl, String dbUser, String dbPassword) {

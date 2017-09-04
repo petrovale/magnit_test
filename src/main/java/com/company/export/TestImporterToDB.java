@@ -52,7 +52,6 @@ public class TestImporterToDB {
                         e.printStackTrace();
                     }
                 });
-                System.out.println();
                 executorService.shutdown();
 
                 return successfully;

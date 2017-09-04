@@ -6,9 +6,12 @@ import com.company.model.Test;
 import org.skife.jdbi.v2.sqlobject.*;
 import org.skife.jdbi.v2.sqlobject.customizers.BatchChunkSize;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapperFactory;
+import org.skife.jdbi.v2.sqlobject.stringtemplate.UseStringTemplate3StatementLocator;
+import org.skife.jdbi.v2.unstable.BindIn;
 
 import java.util.List;
 
+@UseStringTemplate3StatementLocator
 @RegisterMapperFactory(EntityMapperFactory.class)
 public abstract class TestDao implements AbstractDao {
 
@@ -32,4 +35,7 @@ public abstract class TestDao implements AbstractDao {
 
     @SqlQuery("SELECT * FROM test")
     public abstract List<Test> getAll();
+
+    @SqlQuery("SELECT * FROM test WHERE field in (<nameList>)")
+    public abstract List<Test> getBatch(@BindIn("nameList") List<Integer> nameList);
 }
