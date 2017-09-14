@@ -1,9 +1,0 @@
-Скрипт для инициализации базы расположен в каталоге \magnit\src\main\resources\schema.sql
-
-Параметры инициализации - данные для подключения к БД и число N:
-
-org.postgresql.Driver
-jdbc:postgresql://localhost:5432/magnit
-user
-password
-1000000
